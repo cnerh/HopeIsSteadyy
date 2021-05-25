@@ -1,0 +1,250 @@
+﻿.itemDiv,
+.selectedDiv {
+    margin-left: 11px;
+}
+
+.selectedDiv {
+    color: #58954D;
+}
+
+.pagerStyle {
+    margin-bottom: 10px;
+}
+
+.radUploadStyle {
+    float: right;
+    margin-right: 77px;
+}
+
+.RadForm a.rfdSkinnedButton, .RadForm a.rfdSkinnedButton * {
+    cursor: default;
+    font: 12px "Segoe UI",Arial,Helvetica,sans-serif !important;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.fieldset {
+    float: left;
+    width: auto;
+    min-height: 210px;
+    padding: 8px 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+html .fieldset.fieldsetInsert {
+    height: auto;
+    width: 100%;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.fieldset:first-child {
+    margin-right: 8px;
+}
+
+div.RadListView tr.rlvI td,
+div.RadListView tr.rlvIEmpty td {
+    border: 0 none;
+}
+
+div.RadListView {
+    /*overflow: hidden;*/
+    border: 0 none;
+}
+
+#FiledSet1 {
+    padding: 4px 8px 10px;
+}
+
+.btnEdit,
+.btnDelete {
+    min-width: 70px;
+    float: left;
+}
+
+.btnDelete {
+    float: right;
+}
+
+div.RadListView tr.rlvI > td {
+    padding-right: 0;
+}
+
+.RadListView .rlvI > td:first-child {
+    vertical-align: top;
+}
+
+.dataTable {
+    height: 200px;
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 20px;
+}
+
+.RadListView table.dataTable td {
+    padding: 0;
+    border-bottom: 0;
+}
+
+.mainFieldset {
+    max-width: 946px;
+}
+
+    .commandTable > table,
+    .mainFieldset > table {
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    .commandTable td,
+    .mainFieldset td {
+        padding: 0;
+    }
+
+.clearFix {
+    clear: both;
+}
+
+.commandTable {
+    width: 100%;
+}
+
+.insertCell {
+    width: 25%;
+}
+
+.sortCell {
+    text-align: right;
+    width: 75%;
+}
+
+div.RadForm.rfdRadio input[type="radio"], .RadForm.rfdCheckbox input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.sortLabel {
+    padding-right: 5px;
+}
+
+.itemTable {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.innerItemTable {
+    border-spacing: 0;
+}
+
+.itemCellLabel {
+    width: 25%;
+}
+
+.itemCellInfo {
+    width: 60%;
+}
+
+.image {
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 0;
+    text-align: right;
+}
+
+.dataEditTable {
+    height: 80%;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.RadListView table.dataEditTable td {
+    padding: 0;
+    border: 0;
+}
+
+.RadListView table.editTable {
+    width: 95%;
+    margin-bottom: 5px;
+    border-spacing: 3px;
+    border-bottom: 0;
+}
+
+    .RadListView table.editTable tr,
+    .RadListView table.editTable td {
+        border-bottom: 0;
+    }
+
+.editItemCellLabel {
+    width: 25%;
+}
+
+.editItemCellInfo {
+    width: 75%;
+}
+
+.editImage {
+    width: 25%;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.asyncUpload {
+    float: left;
+    width: 229px;
+}
+
+.commandButton,
+.insertCommandButton {
+    width: 250px;
+    text-align: right;
+    padding-top: 20px;
+}
+
+    .commandButton .RadButton,
+    .insertCommandButton .RadButton {
+        margin-left: 10px;
+    }
+
+.RadListView table.dataInsertTable {
+    height: 305px;
+    width: 100%;
+    border-spacing: 0;
+    border-bottom: 0;
+}
+
+    .RadListView table.dataInsertTable td,
+    .RadListView table.dataInsertTable tr {
+        padding: 0;
+        border-bottom: 0;
+    }
+
+.insertAsyncUpload {
+    float: left;
+    width: 261px;
+}
+
+.noRecordsFieldset {
+    width: 800px;
+}
+
+.itemFieldset {
+    height: auto;
+}
+
+.RadForm_Material .itemFieldset {
+    height: auto;
+}
+
+.RadForm_Bootstrap .itemFieldset {
+    height: auto;
+}
+
+.editFieldSet {
+    margin-top: 4px;
+}
+
+.RadForm .sortCell span label.rfdRadioChecked,
+.RadForm .sortCell span label.rfdRadioUnchecked {
+    padding-right: 1em;
+    padding-left: 1.2em;
+}

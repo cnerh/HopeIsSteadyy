@@ -1,0 +1,227 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageSingleMenu.master.cs" Inherits="HopeIsSteady.MasterPageSingleMenu" %>
+
+<%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link href="styles/base.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' />
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        /*.dropdown {
+            float: left;
+            overflow: hidden;
+        }*/
+
+        /*.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}*/
+
+        /*.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}*/
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+                        height: auto;
+
+            background-color: #f9f9f9;
+            min-width: 80px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        body {
+            background-image: url(C:\Users\Sinethemba\source\repos\HopeIsSteady\HopeIsSteady\images\Tulips.jpg);
+        }
+
+        ul {
+            display: flex;
+            width: auto;
+            height: 10vh;
+            margin: auto;
+            max-width: 1000px;
+            justify-content: space-around;
+            text-align: center;
+            /*border:groove;*/
+        }
+
+        li {
+            padding: 1rem 2rem 1.15rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: black;
+            min-width: 80px;
+            margin: auto;
+            font-family: 'Sofia';
+        }
+
+            li:hover {
+                background-color: cadetblue;
+                /*background-image: url('https://scottyzen.sirv.com/Images/v/button.png');*/
+                background-size: 100% 100%;
+                color: #27262c;
+                animation: spring 300ms ease-out;
+                text-shadow: 0 -1px 0 #ef816c;
+                font-weight: bold;
+            }
+
+            li:active {
+                transform: translateY(4px);
+            }
+
+        @keyframes spring {
+            15% {
+                -webkit-transform-origin: center center;
+                -webkit-transform: scale(1.2, 1.1);
+            }
+
+            40% {
+                -webkit-transform-origin: center center;
+                -webkit-transform: scale(0.95, 0.95);
+            }
+
+            75% {
+                -webkit-transform-origin: center center;
+                -webkit-transform: scale(1.05, 1);
+            }
+
+            100% {
+                -webkit-transform-origin: center center;
+                -webkit-transform: scale(1, 1);
+            }
+        }
+
+        .shameless-plug {
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            padding: 8px 20px;
+            color: #ccc;
+            text-decoration: none;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager runat="server"></telerik:RadScriptManager>
+        <div id="wrapper">
+            <br />
+            <h4><i>HOPESTEADY Innovation Team</i></h4>
+            <div class="header">
+                <ul>
+                    <li><a href="Home.aspx"></a><strong>Home</strong></li>
+                    <li><a href="Service.aspx">Servives</a></li>
+                    <div class="dropdown">
+                        <li>Admin
+      <i class="fa fa-caret-down"></i>
+                        </li>
+                        <div class="dropdown-content">
+                            <a href="User.aspx">Users</a>
+                            <a href="UserType.aspx">UserTypes</a>
+                        </div>
+                    </div>
+                     <div class="dropdown">
+                        <li>Add
+      <i class="fa fa-caret-down"></i>
+                        </li>
+                        <div class="dropdown-content">
+                            <a href="AddUserType.aspx">User Type</a>
+                            <a href="AddBlog.aspx">Blog</a>
+                            <a href="AddService.aspx">Service</a>
+                        </div>
+                    </div>
+                    <li><a href="products.html">Directions</a></li>
+                    <li><a href="Blog.aspx">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Logon.aspx">LogOut </a></li>
+
+                </ul>
+                <%-- <telerik:RadMenu ID="RadMenu1" CssClass="mainMenu" runat="server" RenderMode="Auto">
+                    <Items>
+                        <telerik:RadMenuItem Text="Home" NavigateUrl="Default.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="Grid Page" NavigateUrl="Grid.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="ListView Page" NavigateUrl="ListView.aspx" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="About" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="Projects" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="Dashboard" />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="..." />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="..." />
+                        <telerik:RadMenuItem IsSeparator="true" />
+                        <telerik:RadMenuItem Text="Contacts" />
+                    </Items>
+                </telerik:RadMenu>--%>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr style="margin-top: 40px" />
+            <div class="footer">
+               Cynetember Tyal HopeSteady 
+            </div>
+        </div>
+    </form>
+</body>
+</html>
