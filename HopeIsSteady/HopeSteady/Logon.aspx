@@ -36,10 +36,10 @@
         </telerik:RadAjaxManager>
 		        <asp:Panel ID="Panel1" runat="server" Height="380px" CssClass="background1">
 
-       <div class="login-wrap">
+    <div class="login-wrap">
 	<div class="login-html">
-		<input id="tab-1" type="radio" name="tab" class="sign-in" checked /><label for="tab-1" class="tab">Sign In</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"/><label for="tab-2" class="tab">Sign Up</label>
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab"/>Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
 		
 		<div class="login-form">
 			<div class="sign-in-htm">
@@ -64,24 +64,7 @@
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					ref="#forgot">Forgot Password?</a>
+					<a href="#forgot">Forgot Password?</a>
 				</div>
 			</div>
 			<div class="sign-up-htm">
@@ -106,12 +89,12 @@
 				</div>
 				<div class="group">
 					<label for="pass" class="label">Username</label>
-			       <telerik:RadTextBox ID="txtUserNamecreate"  Width="100%" Cssclass="input" AutoCompleteType="Email" ForeColor="Black" DisplayText="Should be an email address" InputType="Email" runat="server"></telerik:RadTextBox>
+			       <telerik:RadTextBox ID="txtUserNamecreate"  Width="100%" Cssclass="input" runat="server"></telerik:RadTextBox>
 				</div>
 
 				<div class="group">
 					<label for="pass" class="label">Password</label>
-			       <telerik:RadTextBox  ID="txtPasswordCreate"  Width="100%" data-type="password" Cssclass="input"  runat="server"></telerik:RadTextBox>
+			       <telerik:RadTextBox  ID="txtPasswordCreate"  Width="100%" data-type="password" Cssclass="input" runat="server"></telerik:RadTextBox>
 				</div>
 
                 <telerik:RadLabel ID="lblErrorMessage" runat="server"></telerik:RadLabel>
@@ -121,13 +104,12 @@
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-					<label for="tab-1"/><a>Already Member?</a>
+					<label for="tab-1">Already Member?</a>
 				</div>
 			</div>
-		 </div>
-	  </div>
-   </div>		
-                    </label>
+		</div>
+	</div>
+</div>
 </asp:Panel>
 		 <telerik:RadAjaxLoadingPanel ID="RadAjaxLoadingPanel1" Transparency="70" runat ="server">
              

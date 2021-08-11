@@ -164,7 +164,9 @@
             <h4><i>HOPESTEADY Innovation Team</i></h4>
             <div class="header">
                 <ul>
-                    <li><a href="Home.aspx"></a><strong>Home</strong></li>
+              <%--      <li><a href="Home.aspx"></a><strong>Home</strong></li>--%>
+                        <li><a href="Home.aspx">Home</a></li>
+
                     <li><a href="Service.aspx">Servives</a></li>
                     <div class="dropdown">
                         <li>Admin
