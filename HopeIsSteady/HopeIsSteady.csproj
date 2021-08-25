@@ -49,6 +49,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Intercom, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Intercom.Dotnet.Client.2.1.1\lib\net452\Intercom.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.5.4.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.5.4\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -139,6 +151,7 @@
     <Content Include="App_Data\RadCaptcha\X.wav" />
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="HopeSteady\Dir.aspx" />
     <Content Include="HopeSteady\Direction.aspx" />
     <Content Include="HopeSteady\AddBlog.aspx" />
     <Content Include="HopeSteady\AddMaterial.aspx" />
@@ -147,6 +160,7 @@
     <Content Include="HopeSteady\Home.aspx" />
     <Content Include="HopeSteady\Login.aspx" />
     <Content Include="HopeSteady\Logon.aspx" />
+    <Content Include="HopeSteady\Map.aspx" />
     <Content Include="HopeSteady\Service.aspx" />
     <Content Include="HopeSteady\User.aspx" />
     <Content Include="HopeSteady\UserType.aspx" />
@@ -184,6 +198,7 @@
     <Content Include="scripts\Scripts\bootstrap.js" />
     <Content Include="scripts\Scripts\bootstrap.min.js" />
     <Content Include="scripts\Scripts\flashcanvas.js" />
+    <None Include="packages.config" />
     <None Include="scripts\Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="scripts\Scripts\jquery-3.4.1.js" />
     <Content Include="scripts\Scripts\jquery-3.4.1.min.js" />
@@ -216,6 +231,7 @@
     <Content Include="Sign.aspx" />
     <Content Include="Signature.aspx" />
     <Content Include="styles\base.css" />
+    <Content Include="HopeSteady\ContactUs.aspx" />
     <Content Include="styles\default.css" />
     <Content Include="styles\grid.css" />
     <Content Include="styles\listView.css" />
@@ -243,6 +259,13 @@
     </Compile>
     <Compile Include="Grid.aspx.designer.cs">
       <DependentUpon>Grid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HopeSteady\Dir.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Dir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HopeSteady\Dir.aspx.designer.cs">
+      <DependentUpon>Dir.aspx</DependentUpon>
     </Compile>
     <Compile Include="HopeSteady\Direction.aspx.cs">
       <DependentUpon>Direction.aspx</DependentUpon>
@@ -299,6 +322,13 @@
     </Compile>
     <Compile Include="HopeSteady\Logon.aspx.designer.cs">
       <DependentUpon>Logon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HopeSteady\Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HopeSteady\Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
     <Compile Include="HopeSteady\Service.aspx.cs">
       <DependentUpon>Service.aspx</DependentUpon>
@@ -357,6 +387,13 @@
     </Compile>
     <Compile Include="Signature.aspx.designer.cs">
       <DependentUpon>Signature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HopeSteady\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HopeSteady\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

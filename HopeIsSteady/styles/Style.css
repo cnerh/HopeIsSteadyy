@@ -16,6 +16,12 @@ body {
     font: 600 16px/18px 'Open Sans',sans-serif;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 *, :after, :before {
     box-sizing: border-box
 }
