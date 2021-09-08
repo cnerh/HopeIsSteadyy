@@ -17,8 +17,16 @@ namespace HopeIsSteady.HopeSteady
         }
 
         protected void btnPost_Click(object sender, EventArgs e)
-        {
-            dal.CreateBlog(Session["name"].ToString(), txtContent.Text, txtTitle.Text);
+        { 
+            if (!IsPostBack)
+            {
+                dal.CreateBlog(Session["name"].ToString(), txtContent.Text, txtTitle.Text);
+
+            }
+            else
+            {
+                Response.Redirect("Logon.aspx");
+            }
         }
 
     }

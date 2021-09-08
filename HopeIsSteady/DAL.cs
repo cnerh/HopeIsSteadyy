@@ -104,6 +104,22 @@ namespace HopeIsSteady
             sqlConnection.Close();
             return dataTable;
         }
+
+
+        public DataTable BlogRead()
+        {
+            if (sqlConnection.State == System.Data.ConnectionState.Closed)
+                sqlConnection.Open();
+
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("spBlogRead", sqlConnection);
+            sqlDataAdapter.SelectCommand.CommandType = System.Data.CommandType.StoredProcedure;
+
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+
+            sqlConnection.Close();
+            return dataTable;
+        }
         //public void DropdownUserType()
         //{
         //    if (sqlConnection.State == System.Data.ConnectionState.Closed)

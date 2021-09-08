@@ -151,6 +151,7 @@
     <Content Include="App_Data\RadCaptcha\X.wav" />
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
+    <Content Include="HopeSteady\Blog.aspx" />
     <Content Include="HopeSteady\Dir.aspx" />
     <Content Include="HopeSteady\Direction.aspx" />
     <Content Include="HopeSteady\AddBlog.aspx" />
@@ -170,6 +171,8 @@
     <Content Include="images\3.jpg" />
     <Content Include="images\4.jpg" />
     <Content Include="images\5.jpg" />
+    <Content Include="images\Welcome.jpg" />
+    <Content Include="images\welcomegif.gif" />
     <Content Include="MasterPage.Master" />
     <Content Include="MasterPageSingleMenu.Master" />
   </ItemGroup>
@@ -259,6 +262,13 @@
     </Compile>
     <Compile Include="Grid.aspx.designer.cs">
       <DependentUpon>Grid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HopeSteady\Blog.aspx.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HopeSteady\Blog.aspx.designer.cs">
+      <DependentUpon>Blog.aspx</DependentUpon>
     </Compile>
     <Compile Include="HopeSteady\Dir.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>

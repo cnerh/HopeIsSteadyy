@@ -53,8 +53,9 @@ namespace HopeIsSteady.HopeSteady
                 }
                 else
                 {
-                    lblMsg.Visible = true;
-                    lblMsg.Text = "The Login credentials inserted are incorrect.";
+                    ScriptManager.RegisterStartupScript(Page, this.GetType(), "Alert", "alert('Try to log in again. The credentials are incorrect. ')", true);
+                   
+
                 }
             }
 

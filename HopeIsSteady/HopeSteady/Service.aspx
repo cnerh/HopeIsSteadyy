@@ -5,6 +5,8 @@
     <link href="../styles/ServiceListView.css" rel="stylesheet" />
     <link href="../styles/listView.css" rel="stylesheet" />
 </asp:Content>
+
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <telerik:RadFormDecorator RenderMode="Lightweight" ID="RadFormDecorator1" runat="server" DecoratedControls="All" DecorationZoneID="demo-container" EnableRoundedCorners="true" />
     <div class="demo-container size-wide" id="demo-container">
@@ -44,7 +46,6 @@
                                  
 <%--                                    <div class="RadListView RadListView_<%# Container.Skin %>">--%>
                                         <asp:PlaceHolder ID="CustomersContainer" runat="server"></asp:PlaceHolder>
-                                   
                            <div class="clear"></div>
                             <div class="pagerWrapper">
                                 <div class="demoPager">

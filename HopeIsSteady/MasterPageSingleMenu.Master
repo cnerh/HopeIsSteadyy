@@ -190,7 +190,7 @@
                     <li><a href="Map.aspx">Directions</a></li>
                     <li><a href="Blog.aspx">Blog</a></li>
                     <li><a href="ContactUs.aspx">Contact Us</a></li>
-                    <li><a href="Logon.aspx">LogOut </a></li>
+                    <li id="logout"><a  href="Logon.aspx" >LogOut </a></li>
 
                 </ul>
                 <%-- <telerik:RadMenu ID="RadMenu1" CssClass="mainMenu" runat="server" RenderMode="Auto">
